@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do list</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <h1>Check list do seu dia</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form id="atividade"> 
+                    <div> 
+                        <label for="data-ativiade">Para quando é essa tarefa?</label>
+                        <input type="date">
+                    </div>
+                    <div>
+                        <label for="tarefa">Descreva a atividade</label>
+                        <input type="text" id="nome-atividade" placeholder="tarefa">
+                    </div>
+                    <div>
+                    <button type="submit"  id="confirmar-atividade">incluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="ul-container">
+            <div id="mensagem-data"></div>
+            <ul id="lista-atividades">
+                <li></li>
+            </ul>
+            <button type="reset" id="botao-reset">Apagar rotina</button>
+        </div> 
+    </main>
+    <footer>
+        <p>
+            Rafael Guilherme
+        </p>
+        <a href="https://github.com/Rg96Dev"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rafael-oliveira-7148a427b/"><i class="fa-brands fa-linkedin"></i></a>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
