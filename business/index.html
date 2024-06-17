@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <title>FisoLar</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>FisoLar</h1>
+            <div class="btn-menu">
+                <button type="button">Menu</button>
+            </div>
+        <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Serviços</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Massagem</a>
+                            </li>
+                            <li>
+                                <a href="#">Quiropraxia</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Pilates</a>
+                            </li>
+                            <li>
+                                <a href="#">Fortalecimento</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear-left"></div>
+        </nav>
+    </header>
+    <section id="sobre">
+        <div class="container container-flex">
+        <img src="./imagens/foto sobre.jpg" alt="imagem fisioterapeuta"/>
+    <div>
+        <h1>Sobre</h1>
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod rerum dicta blanditiis hic pariatur quae at itaque et! 
+        Atque debitis magnam fugit molestias dolore esse numquam doloremque! Fugit, quas cumque!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Molestiae porro ut explicabo nesciunt deleniti quod magni quae veniam officiis nemo quam illo esse, doloribus sint iusto tempora doloremque? Unde, sunt?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+        Modi labore unde reprehenderit cumque repellendus nesciunt dicta, molestiae accusamus earum corrupti laborum animi officiis quidem perferendis quia obcaecati autem ea dolorum!
+        </p>
+    </div>
+    </div>
+    </section>
+    <section>
+        <h1>Serviços</h1>
+        <div class="servicos">
+            <article class="produto">
+                <img src="./imagens/produtos/massagem.jpg"/>
+                <h3>Massagem Relaxante</h3>
+                <p>É uma técnica utilizada para proporcionar relxamento muscular</p>
+                <strong>R$ 100,00</strong>
+                <button type="button">Tenho interesse</button>
+            </article>
+            <article class="produto">
+                <img src="./imagens/produtos/pilates.jpg"/>
+                <h3>Pilates</h3>
+                <p>É uma técnica utilizada para proporcionar  , melhoria da circulação  alívio de tensões e estresse</p>
+                <strong>R$ 100,00</strong>
+                <button type="button">Tenho interesse</button>
+            </article>
+            <article class="produto">
+                <img src="./imagens/produtos/ventosa.jpg"/>
+                <h3>Ventosa</h3>
+                <p>Aventosaterapia possibilita o relaxamento do corpo e da mente, fortalecimento dos vasos sanguíneos</p>
+                <strong>R$ 100,00</strong>
+                <button type="button">Tenho interesse</button>
+            </article>
+            <article class="produto">
+                <img src="./imagens/produtos/fortalecimento.jpg"/>
+                <h3>Fortalecimento</h3>
+                <p>Tem como principal objetivo aumentar a força e a resistência da musculatura</p>
+                <strong>R$ 100,00</strong>
+                <button type="button">Tenho interesse</button>
+            </article>
+        </div>
+    </section>
+    <footer>
+    <div class="container container-flex">
+        <p>
+            2024 &copy; FIsioLar - Todos os direitos reservado
+        </p>
+        <ul class="container-flex">
+            <li>
+                <a href="#">
+                    <img src="./icones/facebook.png" alt="facebook">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/instagram.png" alt="instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./icones/youtube.png" alt="youtube">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function() {
+        $(".bnt-menu button").click(function() {
+            $(".menu").slideToggle();
+        })
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Quicksand", sans-serif;
+}
+
+body{
+    background-color:#36cecc;
+    color: #c2e4cb;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+header > .container,
+footer > .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 16px 0;
+    border-bottom: 1px solid #c2e4cb;
+    background-color: #27b1bf;
+    color: #f7f3cf;
+}
+
+header a , li {
+    text-decoration: none;
+    font-weight:bold;
+    color:#f7f3cf;
+}
+
+h1{
+    font-size: 24px;
+}
+
+.menu > li {
+    float: left;
+    list-style: none;
+    padding: 16px;
+    font-size: 24px;
+}
+
+.submenu{
+    display: none;
+    background-color:#c2e4cb;
+    list-style: none;
+    position:absolute;
+}
+
+.clear-left{
+    clear: both;
+}
+
+.menu li:hover .submenu{
+    display: block;
+}
+
+.submenu li{
+    display: block;
+    padding: 8px;
+}
+
+.container-flex{
+    display: flex;
+}
+
+.container img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 24px 0;
+
+}
+
+section h1 {
+    margin-bottom: 16px;
+}
+
+.servicos{
+    display: grid;
+    grid-template-columns: repeat(4, 24.5%);
+    column-gap: 1%;
+    row-gap: 5%;
+    padding: 16px;
+}
+
+.servicos img {
+    max-width: 100%;
+}
+
+.servicos h3{
+    padding: 8px 0;
+}
+
+.produto {
+    overflow: hidden;
+}
+
+.produto button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #f7f3cf;
+    color: #27b1bf;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer { 
+    background-color:#27b1bf;
+    padding-top: 16px;
+    color: #f7f3cf;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
+
+
+
+@media screen and (max-width: 640px) {
+    
+    .container {
+        max-width: 90%;
+        width: 100%;
+        
+    }
+
+    .container-flex{
+        display: block;
+        overflow: hidden;
+    }
+
+    .menu > li {
+        float: left;
+        list-style: none;
+        padding: 16px;
+        font-size: 16px;
+    }
+    
+    .servicos{
+        display: block;
+    }
+
+
+    .servicos .produto{
+        margin-bottom: 32px;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    footer > .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .submenu{
+        display: block;
+        width: 100%;
+        position: absolute;
+        border: none;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .menu > li {
+        clear: both;
+        
+    }
+    .submenu li{
+        display: block;
+        padding: 8px;
+    }
+    .btn-menu{
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .btn-menu button {
+        padding: 8px;
+
+    }
+    
+}
+
+@media screen and (min-width:641px) and (max-width: 1023px) {
+    .container {
+        width: 90%;
+    }
+
+    .btn-menu {
+        display: none;
+    }
+
+    .servicos{
+        grid-template-columns: repeat(2, 48%);
+        row-gap: 2%;
+    }
+
+    .produto button {
+        display: block;
+        width: 99%;
+        padding: 10px ;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+    .btn-menu {
+        display: none;
+    }
+}
