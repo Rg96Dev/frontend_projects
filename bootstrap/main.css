@@ -1,0 +1,12 @@
+.col {
+    max-width: 50%;
+}
+
+.col > h2 {
+    padding: 8px 0;
+}
+
+.space {
+    margin-bottom: 16px;
+}
+
